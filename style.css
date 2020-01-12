@@ -1,68 +1,225 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap";
 
 html, body {
   padding: 0 0 0 0;
   margin: 0;
-  font-family: 'helvetica', 'arial', 'sans';
 }
 
-h1,h2,h3,h4 {
-  font-family: 'helvetica', 'arial', 'sans';
-  }
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(80, 80, 80);
+  overflow-x: hidden;
+}
+
+.main-page {
+  padding: 0 10vw 10vw 10vw;
+}
+
+
+section {
+  padding: 5vw 0 0 0;
+}
+
+p {
+  color: rgb(80, 80, 80);
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h1, h2 {
+  letter-spacing: 3px;
+  color: rgb(40, 40, 40);
+}
+
+h2 {
+  font-size: 2.5em;
+}
 
 a {
   color: #000;
 }
 
 .header {
+  min-height: 100vh;
   background: #fff;
   color: #000;
-  padding: 30px 30px 30px;
+  padding: 5vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.8s ease-in-out;
 }
 
-.header h1 {
-  font-size: 50px;
-  }
-
-.assignment {
-  font-size: 12px;
-  line-height: 24px;
-  font-family: 'helvetica', 'arial', 'sans';
-  padding: 20px 20px 20px 30px;
-  width: 250px;
-  height: 350px;
-  float: left;
+.header .img-container {
+  width: 30%;
+  height: 40%;
+  overflow: hidden;
 }
 
-.assignment a {
-    color: #000;
-    text-decoration: none;
+.img-container img {
+  width: 100%;
+  display: block;
 }
 
-.assignment a:hover {
-  background: #F06;
-  color: #F06;
+.content {
+  width: 65%;
+}
+
+.content p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+#assignments {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#assignments h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.assignment-card {
+  margin-top: 10vh;
+  margin-right: 2%;
+  min-width: 280px;
+  width: 23%;
+  height: 32em;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease-in-out;
+}
+
+.assignment-card:hover {
+  transform: scale(1.03);
+  opacity: 0.6;
+}
+
+.assignment-card .img-container {
+  width: 100%;
+  height: 50%;
+}
+
+.assignment-card .img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.assignment-card {
+  text-align: left
+}
+
+.assignment-card .content {
+  width: 100%;
+  text-align: center;
+  padding: 0 5%;
+}
+
+.assignment-card h3 {
+  font-size: 1.7em;
+  color: rgb(40, 40, 40);
+  letter-spacing: 1px;
+}
+
+.gif-container {
+  width: 100%;
+  height: 100vh;
+  background: green;
+}
+
+#documentation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 7em;
+}
+
+.card-50 {
+  grid-column: span 1;
+  background-color: green;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.card-50:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.card-50 .content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.card-100 {
+  grid-column: span 2;
+  position: relative;
+  min-height: 30em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.card-50 .content img {
+  width: 100%;
+}
+
+.card-50 .title {
+  position: absolute;
+  background: #525174;
+  border-radius: 15px;
+  z-index: 100;
+  left: 2em;
+  top: -1.5em;
+}
+
+.card-100 .title {
+  position: absolute;
+  background: #525174;
+  border-radius: 15px;
+  z-index: 100;
+  left: 2em;
+  top: -1.5em;
+}
+
+.title h3 {
+  margin: 0.6em;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: white;
+}
+
+main {
+  padding: 0;
+}
+
+a {
   text-decoration: none;
 }
 
-
-.footer {
-    width: 1100px;
-    float: left;
-    padding: 300px 0px 30px 30px;
+.top-20 {
+  transform: translate3d(0, 10%, 0)
 }
 
-.widebody {
-    width: 800px;
-    padding: 0px 30px 30px 30px;
+.right-20 {
+  transform: translate3d(30%, 0, 0);
 }
 
-.widebody a {
+.no-opacity {
+  opacity: 0;
 }
-
-.widebody a:hover {
-  background: #F06;
-  color: #FFF;
-  text-decoration: none;
-}
-
