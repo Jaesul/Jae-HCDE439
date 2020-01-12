@@ -1,8 +1,30 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap";
 
+body::-webkit-scrollbar {
+	width: 10px;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  background-color: #888;
+  background-clip: padding-box;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  opacity: 0.5;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 html, body {
   padding: 0 0 0 0;
   margin: 0;
+}
+
+img {
+  display: block;
 }
 
 * {
@@ -134,7 +156,25 @@ a {
 .gif-container {
   width: 100%;
   height: 100vh;
-  background: green;
+  overflow: hidden;
+  position: relative;
+}
+
+.gif-container .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.gif-container .overlay h2 {
+  color: white;
+  font-size: 4.5em;
+  letter-spacing: 4px;
+  text-align: center;
 }
 
 #documentation {
@@ -145,7 +185,6 @@ a {
 
 .card-50 {
   grid-column: span 1;
-  background-color: green;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
@@ -166,6 +205,13 @@ a {
   border-radius: 5px;
 }
 
+.card-100 .content{
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
 .card-100 {
   grid-column: span 2;
   position: relative;
@@ -175,6 +221,10 @@ a {
 }
 
 .card-50 .content img {
+  width: 100%;
+}
+
+.card-100 .content img {
   width: 100%;
 }
 
