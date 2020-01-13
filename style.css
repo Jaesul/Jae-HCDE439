@@ -42,12 +42,12 @@ body {
 }
 
 .main-page {
-  padding: 0 17vw 10vw 17vw;
+  padding: 0 13vw 10vw 13vw;
 }
 
 
 section {
-  padding: 5vw 0 0 0;
+  padding: 15vh 0 0 0;
 }
 
 p {
@@ -164,6 +164,12 @@ a {
   position: relative;
 }
 
+.gif-container video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .gif-container .overlay {
   display: flex;
   flex-direction: column;
@@ -184,7 +190,7 @@ a {
 #documentation {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 7em;
+  grid-gap: 9em;
 }
 
 .card-50, .card-100 {
@@ -223,13 +229,14 @@ a {
 .card-100 {
   grid-column: span 2;
   position: relative;
-  min-height: 30em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
 }
 
 .card-50 .content img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-100 .content img {
@@ -238,7 +245,7 @@ a {
 
 .card-50 .title {
   position: absolute;
-  background: #525174;
+  background: #a8373c;
   border-radius: 15px;
   z-index: 100;
   left: 2em;
@@ -247,7 +254,7 @@ a {
 
 .card-100 .title {
   position: absolute;
-  background: #525174;
+  background: #a8373c;
   border-radius: 15px;
   z-index: 100;
   left: 2em;
