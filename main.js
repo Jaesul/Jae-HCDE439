@@ -4,8 +4,11 @@
   window.addEventListener("load", init);
 
   function init() { 
-    let header = qs()
     let observer = scrlCntObs();
+    let header = qs('.header');
+    if(header) {
+      header.classList.remove('no-opacity', 'right-20');
+    }
     let transitionItms = qsa('.no-opacity');
     transitionItms.forEach(element => {
         observer.observe(element);
@@ -15,7 +18,7 @@
   function scrlCntObs() {
     let options = {
       rootMargin: '0px 0px 0px 0px',
-      threshold: 0.4
+      threshold: 0.3
     }
 
     let observer = new IntersectionObserver(
