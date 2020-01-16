@@ -4,10 +4,6 @@ body::-webkit-scrollbar {
 	width: 10px;
 }
 
-img {
-  image-orientation: from-image;
-}
-
 body::-webkit-scrollbar-thumb
 {
   background-color: #888;
@@ -102,6 +98,10 @@ a {
   line-height: 1.6em;
 }
 
+.content h3:first-child {
+  margin-bottom: .2em;
+}
+
 #assignments {
   display: flex;
   justify-content: center;
@@ -148,7 +148,7 @@ a {
 .assignment-card .content {
   width: 100%;
   text-align: center;
-  padding: 0 5%;
+  padding: 0 7%;
 }
 
 .assignment-card h3 {
