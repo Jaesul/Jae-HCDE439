@@ -87,6 +87,5 @@ void loop() {
     Serial.print("\r\n");
   }
 
-  // delay to avoid too much input
   delay(150);
 }
