@@ -25,6 +25,12 @@ html, body {
   margin: 0;
 }
 
+h4 {
+  font-size: 1.3em;
+  margin-top: 0;
+  margin-bottom: 1.1em;
+}
+
 img {
   display: block;
 }
@@ -40,7 +46,7 @@ body {
 }
 
 .main-page {
-  padding: 0 13vw 10vw 13vw;
+  padding: 0 15vw 10vw 15vw;
 }
 
 
@@ -100,6 +106,10 @@ a {
   line-height: 1.4em;
 }
 
+.content p:last-child {
+  padding-bottom: 0;
+}
+
 .content h3:first-child {
   margin-bottom: .2em;
 }
@@ -130,7 +140,7 @@ a {
 }
 
 .assignment-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
   opacity: 0.6;
 }
 
@@ -159,6 +169,12 @@ a {
   font-size: 1.7em;
   color: rgb(40, 40, 40);
   letter-spacing: 1px;
+}
+
+.final {
+  width: 65%;
+  height: 45em;
+  margin: 1% 15% 1% 15%;
 }
 
 .gif-container {
@@ -226,8 +242,18 @@ a {
 .card-100 .content{
   width: 80%;
   overflow: hidden;
+  padding: 4% 6% 3% 4%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
+  position: relative;
+}
+
+.card-100 .tech-container {
+   
+}
+
+.content p {
+  padding-bottom: 1.4em;
 }
 
 .card-100 {
@@ -267,8 +293,8 @@ a {
 }
 
 .title h3 {
-  margin: 0.6em;
-  font-size: 1.4em;
+  margin: 0.35em 0.6em;
+  font-size: 1.6em;
   letter-spacing: 1px;
   font-weight: 500;
   color: white;
