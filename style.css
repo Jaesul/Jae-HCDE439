@@ -230,6 +230,20 @@ a {
   padding-bottom: 100%;
 }
 
+.technology-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10% 0;
+}
+
+.technology-item {
+  width: 30%;
+}
+
+.technology-container .img-container {
+  width: 100%;
+}
+
 .card-50 .content{
   position: absolute;
   width: 100%;
@@ -242,10 +256,15 @@ a {
 .card-100 .content{
   width: 80%;
   overflow: hidden;
-  padding: 4% 6% 3% 4%;
+  padding: 6% 5.25% 3% 5.25%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
   position: relative;
+}
+
+.card-100 .main-header {
+  padding: 0 5% 5% 5%;
+  text-align: center;
 }
 
 .card-100 .tech-container {
@@ -288,7 +307,7 @@ a {
   background: #a8373c;
   border-radius: 15px;
   z-index: 100;
-  left: 12em;
+  left: 15%;
   top: -1.5em;
 }
 

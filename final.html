@@ -9,16 +9,22 @@
         <script src="main.js"></script>
     </head> 
     <body> 
-        <div class="gif-container">
-            <div class="overlay">
-                <h2>Kira!</h2>
-            </div>
-            <video width="100%" autoplay loop muted>
-                <source src="imgs/web-connect-2/video.mp4" type="video/mp4" />
-            </video>
-        </div>
         <main class="main-page">
             <section id="documentation">
+                <div class="card-100 no-opacity">
+                    <div class="content main-header">
+                        <h1>Kira!</h1>
+                        <iframe width="560" height="560" src="https://www.youtube.com/embed/0Yz3VUCPbJQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="card-100 no-opacity">
+                    <div class="title">
+                        <h3>Github Link</h3>
+                    </div>
+                    <div class="content">
+                        <h4>You can find all the code that was used <a href="https://github.com/Jaesul/hcde-webconnect" target="blank">here</a>!</h4>
+                    </div>
+                </div>
                 <div class="card-100 no-opacity">
                     <div class="title">
                         <h3>Features</h3>
@@ -26,15 +32,15 @@
                     <div class="content">
                         <h4>Light Control</h4>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe harum id accusantium dolore tempora odio eveniet quae deleniti sit, ducimus explicabo magni hic alias quasi. Maiores iste voluptate fuga dignissimos.
+                            Kira allows you to control light anywhere you want, actually in this version you can only control it from wherever you’re running the node.js server. Remote control or through your phone you can control Kira wherever and whenever you like!
                         </p>
                         <h4>Wifi Enabled</h4>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ea voluptas laborum rerum atque, et ratione magni officia voluptates quos culpa hic sint deserunt quis, reiciendis recusandae debitis itaque repellendus.
+                            Kira is Wi-Fi enabled, go to the webpage that hosts the Node.js server and you can control Kira just as you would with the remote!
                         </p>
                         <h4>Multi Device Connection</h4>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores minus eius placeat? Deserunt, modi nihil exercitationem quia voluptate fugiat assumenda iste natus. Atque necessitatibus voluptas facilis excepturi vitae quaerat quibusdam?
+                            Kira also allows you to have multiple devices connect to the light, making controlling the light accessible for you and whoever needs access!
                         </p>
                     </div>
                 </div>
@@ -45,15 +51,15 @@
                     <div class="content">
                         <h4>House Lighting</h4>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe harum id accusantium dolore tempora odio eveniet quae deleniti sit, ducimus explicabo magni hic alias quasi. Maiores iste voluptate fuga dignissimos.
+                            This project stems from the frustration I have with the lights in my apartment. I’ve lived here for almost 2 years now, but I still haven’t learned which switch goes to which light. Every time I think I know; I turn on a different light. What also is frustrating is that some light switches go to lights that are across the room, making it a pain to switch on and off lights comfortably. That’s why I wanted to make Kira accessible from anywhere in the room, and from any mobile connected device. 
                         </p>
                         <h4>Praticing Web-Development Skills</h4>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ea voluptas laborum rerum atque, et ratione magni officia voluptates quos culpa hic sint deserunt quis, reiciendis recusandae debitis itaque repellendus.
+                            My career path and passion are web development. I wanted to try and blend my physical prototyping skills with my development skills to see if I could make a usable and attractive product.
                         </p>
                         <h4>Creating Something of Use</h4>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores minus eius placeat? Deserunt, modi nihil exercitationem quia voluptate fugiat assumenda iste natus. Atque necessitatibus voluptas facilis excepturi vitae quaerat quibusdam?
+                            Lastly, I wanted to make something I could use. I hate making little websites or knickknacks that get put into GitHub or placed on a shelf.
                         </p>
                     </div>
                 </div>
@@ -62,18 +68,23 @@
                         <h3>Technologies Used</h3>
                     </div>
                     <div class="content">
-                        <h4>House Lighting</h4>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe harum id accusantium dolore tempora odio eveniet quae deleniti sit, ducimus explicabo magni hic alias quasi. Maiores iste voluptate fuga dignissimos.
-                        </p>
-                        <h4>Praticing Web-Development Skills</h4>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ea voluptas laborum rerum atque, et ratione magni officia voluptates quos culpa hic sint deserunt quis, reiciendis recusandae debitis itaque repellendus.
-                        </p>
-                        <h4>Creating Something of Use</h4>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores minus eius placeat? Deserunt, modi nihil exercitationem quia voluptate fugiat assumenda iste natus. Atque necessitatibus voluptas facilis excepturi vitae quaerat quibusdam?
-                        </p>
+                        <div class="technology-container">
+                            <div class="technology-item">
+                                <div class="img-container">
+                                    <img src="imgs/final/arduino-img.png" alt="">
+                                </div>
+                            </div>
+                            <div class="technology-item">
+                                <div class="img-container">
+                                    <img src="imgs/final/p5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="technology-item">
+                                <div class="img-container">
+                                    <img src="imgs/final/node.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card-50 no-opacity">
@@ -81,7 +92,7 @@
                         <h3>Schematic Diagram</h3>
                     </div>
                     <div class="content">
-                        <img src="imgs/web-connect-2/schematic-diagram.png" alt="">
+                        <img src="imgs/final/circut.png" alt="">
                     </div>
                 </div>
                 <div class="card-50 no-opacity">
@@ -89,23 +100,7 @@
                         <h3>Circut Diagram</h3>
                     </div>
                     <div class="content">
-                        <img src="imgs/web-connect-2/circut-diagram.png" alt="">
-                    </div>
-                </div>
-                <div class="card-100 no-opacity">
-                    <div class="title">
-                        <h3>Server Code</h3>
-                    </div>
-                    <div class="content">
-                        <img src="imgs/web-connect-2/code-serverside.png" alt="">
-                    </div>
-                </div>
-                <div class="card-100 no-opacity">
-                    <div class="title">
-                        <h3>Client Code</h3>
-                    </div>
-                    <div class="content">
-                        <img src="imgs/web-connect-2/code-clientside.png" alt="">
+                        <img src="imgs/final/Schematic.jpg" alt="">
                     </div>
                 </div>
                 <div class="card-100 no-opacity">
@@ -113,15 +108,60 @@
                         <h3>Arduino Code</h3>
                     </div>
                     <div class="content">
-                        <img src="imgs/web-connect-2/arduino-code.png" alt="">
+                        <img src="imgs/final/arduino.png" alt="">
+                    </div>
+                </div>
+                <div class="card-100 no-opacity code">
+                    <div class="content">
+                        <h4>Code Implementation</h4>
+                        <p>
+                            First, we’ll start off with implementing the infrared side of the code. You want to import the IR sensor package which can be found
+                            <a href="https://github.com/z3t0/Arduino-IRremote">here</a> . Once you have it download add it to your project like I did in the first line of code. Enable the IR sensor in the setup portion, and you’re ready to go. 
+                        </p>
+                        <p>
+                            Now let’s take a look at irBegin() which handles all of the ir sensor data. In this method the inputs are taken care of using a switch statement. The Hex codes that are in the switch statements need to be logged and recorded for your specific remote, that can be done using this guide 
+                            <a href="https://www.youtube.com/watch?v=iFpAqG90zY0&t=118s">here</a>. 
+                            Next let’s look at the web portion of the code. In the web portion we want to be receiving data from the webpage on the state of the light. Here we have an if statement to filter out the null value, -1, and scrub the light brightness. 
+                        </p>
+                        <p>
+                            Lastly look at sending data. In the client-side code we have a method that listens for a read line. So, we want to format our string to be in json so client-side it can be serialized into json without messing up. Then end with a /r/n to signal that the message is finished. 
+                        </p>
+                        <p>
+                            Other than that though, just copy and paste the code and hope that it works.
+                        </p>
                     </div>
                 </div>
                 <div class="card-100 no-opacity">
                     <div class="title">
-                        <h3>Resistor Calculation</h3>
+                        <h3>Client Code</h3>
                     </div>
                     <div class="content">
-                        <img src="imgs/arduino.jpg" alt="">
+                        <img src="imgs/final/sketch.png" alt="">
+                    </div>
+                </div>
+                <div class="card-100 no-opacity code">
+                    <div class="content">
+                        <h4>Code Implementation</h4>
+                        <p>
+                            The client code really is just an exercise in using p5.js. There’s not really much setup here you need to worry about. The main check is to ensure that your com port is the correct one. Here I have it set to COM4 because my Arduino was connected to COM4 but yours might be different. In the Arduino IDE, go to the top menus, click tools, and then port to see which port your Arduino is connected to. Copy and paste that where my COM4 is and you’ll be golden!!
+
+                        </p>
+                    </div>
+                </div>
+                <div class="card-100 no-opacity">
+                    <div class="title">
+                        <h3>Server Code</h3>
+                    </div>
+                    <div class="content">
+                        <img src="imgs/final/server-side.png" alt="">
+                    </div>
+                </div>
+                <div class="card-100 no-opacity code">
+                    <div class="content">
+                        <h4>Code Implementation</h4>
+                        <p>                                   
+                            The Node.js part is just copy and paste. There’s nothing here you need to modify. The websocket portion ended up being a little too complex to solve in the time that I had so it is left unfinished, but the light will work just fine without it!     
+                        </p>
                     </div>
                 </div>
             </section>
